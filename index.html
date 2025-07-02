@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Olivia Didi!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #ffd6e8, #ffe6f2);
+      background-size: cover;
+      color: #4b2e2e;
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+    .message {
+      background: rgba(255, 240, 245, 0.9);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.2em;
+      color: #4b2e2e;
+      box-shadow: 0 4px 12px rgba(255, 182, 193, 0.5);
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: #c71585;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <canvas class="confetti"></canvas>
+  <h1>Happy Birthday Olivia Didi! 🎉🎂</h1>
+  <div class="message">
+    <p>Hello Olivia Didi,</p>
+    <p>🎉🎂 <strong>Many many happy returns of the day!</strong> 🎈🎁<br>
+    <strong>Happy Birthday to you!</strong> 🥳</p>
+
+    <p>I wish that you have a joyful birthday. So I just heard last night from Sorjo da that today is your birthday, and honestly — I wouldn’t have gotten my ass up and started working on this site if I didn’t care 😅...</p>
+
+    <p>And that’s what I learned from you — <strong>to care about people</strong> 💖</p>
+
+    <p>You are a very kind girl. You always care about others, and we all appreciate that from the bottom of our hearts 💌. Keep the good work going and have a <strong>great 22nd birthday</strong>! ✨</p>
+
+    <p>Have a wonderful day! 🌸<br>
+    <strong>We all love you! ❤️</strong></p>
+  </div>
+  <div class="footer">Made with love 💕</div>
+
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    const confettiSettings = { origin: { y: 0.6 } };
+    setInterval(() => {
+      confetti({...confettiSettings, spread: 70, particleCount: 50 });
+    }, 1500);
+  </script>
+</body>
+</html>
+
